@@ -1,15 +1,24 @@
-logs
+# Compiled
+*.class
+
+# Log files
+*.log
+
+# Intellij IDEA
+.idea/
+.idea_modules/
+out/
+*.iml
+
+# Maven
+target/
+.classpath
+
+# Play! framework
 project/project
 project/target
-target
-tmp
-.history
-dist
-/.idea
-/*.iml
-/out
-/.idea_modules
-/.classpath
-/.project
-/RUNNING_PID
-/.settings
+RUNNING_PID
+logs/
+tmp/
+dist/
+.cache/
