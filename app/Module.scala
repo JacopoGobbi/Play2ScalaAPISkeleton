@@ -11,9 +11,7 @@ import com.google.inject.AbstractModule
  * configuration file.
  */
 class Module extends AbstractModule {
-
   override def configure(): Unit = {
 
   }
-
 }

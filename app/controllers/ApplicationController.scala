@@ -1,11 +1,13 @@
 package controllers
 
-import javax.inject.Singleton
-import play.api.mvc._
+import javax.inject.{Inject, Singleton}
+import play.api.mvc.{Action, AnyContent, BaseController, ControllerComponents}
 
 @Singleton
-class ApplicationController {
-  def index = Action {
-    Assets.NoContent
+class ApplicationController @Inject()(
+  val controllerComponents: ControllerComponents
+) extends BaseController {
+  def index: Action[AnyContent] = Action {
+    Ok("Success")
   }
 }
